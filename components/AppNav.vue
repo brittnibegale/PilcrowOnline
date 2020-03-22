@@ -1,6 +1,14 @@
 <template>
   <header>
     <h1>Online Ordering</h1>
+      <nav>
+        <ul>
+          <li>
+            <div class="carttotal" v-if="cartCount > 0">{{ cartCount }}</div>
+            <nuxt-link to="/cart">Cart</nuxt-link>
+          </li>
+        </ul>
+      </nav>
   </header>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
   <footer>
     <section class="callout">
-      <h2>"woot woot some fun words here"</h2>
-      <p>Fun Things</p>
+      <h2>"A cup of coffee a day keeps the naps away"</h2>
+      <p>me</p>
     </section>
     <app-footer-links />
   </footer>

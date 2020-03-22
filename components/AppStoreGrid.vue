@@ -12,9 +12,9 @@
             <input type="number" v-model="quantity" />
             <button class="update-num" @click="quantity++">+</button>
           </p>
-        <NuxtLink :to="`product/${item.id}`">
-          <button class="multi-item">View Item ></button>
-        </NuxtLink>
+        <p>
+          <button class="button purchase" @click="cartAdd">Add to Cart</button>
+        </p>
       </div>
     </transition-group>
     <aside>
