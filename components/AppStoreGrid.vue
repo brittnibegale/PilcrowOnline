@@ -3,7 +3,7 @@
     <transition-group name="items" tag="section" class="content">
       <div v-for="item in filteredprice" :key="item.id" class="item">
         <div class="img-contain">
-
+            <img :src="`/products/${item.img}`" />
         </div>
         <h3>{{ item.name }}</h3>
         <h4 class="price">{{ item.price | dollar }}</h4>
@@ -71,6 +71,7 @@ export default {
 
 .img-contain {
   max-height: 200px;
+  max-width: 200px;
   display: flex;
   align-content: center;
   align-items: center;

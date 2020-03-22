@@ -2,20 +2,26 @@
   <div>
     <app-nav />
     <main>
-      <nuxt />
+      <app-store-grid :data="storedata" />
     </main>
     <app-footer />
   </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
 import AppFooter from "~/components/AppFooter.vue";
 import AppNav from "~/components/AppNav.vue";
+import AppStoreGrid from "~/components/AppStoreGrid.vue";
 
 export default {
   components: {
     AppFooter,
-    AppNav
+    AppNav,
+    AppStoreGrid
+  },
+    computed: {
+    ...mapState(["storedata"])
   }
 };
 </script>

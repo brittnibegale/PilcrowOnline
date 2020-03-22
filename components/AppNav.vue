@@ -1,20 +1,6 @@
 <template>
   <header>
     <h1>Online Ordering</h1>
-    <nav>
-      <ul>
-        <li>
-          <nuxt-link to="/all">All</nuxt-link>
-        <li>
-          <nuxt-link to="/coffee">Coffee</nuxt-link>
-        <li>
-          <nuxt-link to="/food">Food</nuxt-link>
-        <li>
-          <div class="carttotal" v-if="cartCount > 0">{{ cartCount }}</div>
-          <nuxt-link to="/cart">Cart</nuxt-link>
-        </li>
-      </ul>
-    </nav>
   </header>
 </template>
 
